@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite errors="0" failures="0" name="unittest.suite.TestSuite" tests="1" time="20.947">
+  <testcase classname="__main__.ManualInputTest" name="test_manual_input" time="20.9470"></testcase>
+  <system-out><![CDATA[[INFO] [WallTime: 1427005125.649039] [0.000000] zeroing
+[INFO] [WallTime: 1427005143.977152] [0.200000] zeroing
+[INFO] [WallTime: 1427005143.977551] [0.200000] zeroing
+[INFO] [WallTime: 1427005144.078497] [0.300000] zeroing
+[INFO] [WallTime: 1427005144.321477] [0.400000] zeroing
+[INFO] [WallTime: 1427005144.425414] [0.500000] arming
+[INFO] [WallTime: 1427005144.524314] [0.600000] arming
+[INFO] [WallTime: 1427005144.623432] [0.700000] arming
+[INFO] [WallTime: 1427005144.725951] [0.800000] arming
+[INFO] [WallTime: 1427005144.823428] [0.900000] arming
+[INFO] [WallTime: 1427005144.928066] [1.000000] triggering posctl
+[INFO] [WallTime: 1427005145.026136] [1.100000] triggering posctl
+[INFO] [WallTime: 1427005145.128529] [1.200000] triggering posctl
+[INFO] [WallTime: 1427005145.228041] [1.300000] triggering posctl
+[INFO] [WallTime: 1427005145.329501] [1.400000] triggering posctl
+[INFO] [WallTime: 1427005145.428508] [1.500000] setting offboard mode
+[INFO] [WallTime: 1427005145.527458] [1.600000] setting offboard mode
+[INFO] [WallTime: 1427005145.628171] [1.700000] setting offboard mode
+[INFO] [WallTime: 1427005145.726847] [1.800000] setting offboard mode
+[INFO] [WallTime: 1427005145.829693] [1.900000] setting offboard mode
+[INFO] [WallTime: 1427005145.926372] [2.000000] triggering offboard
+[INFO] [WallTime: 1427005146.029427] [2.100000] triggering offboard
+[INFO] [WallTime: 1427005146.126991] [2.200000] triggering offboard
+[INFO] [WallTime: 1427005146.230533] [2.300000] triggering offboard
+[INFO] [WallTime: 1427005146.329714] [2.400000] triggering offboard
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

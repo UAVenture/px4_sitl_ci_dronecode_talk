@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite errors="0" failures="0" name="unittest.suite.TestSuite" tests="1" time="31.697">
+  <testcase classname="__main__.DirectOffboardPosctlTest" name="test_posctl" time="31.6970"></testcase>
+  <system-out><![CDATA[[INFO] [WallTime: 1427005155.025432] [4.815000] zeroing
+[INFO] [WallTime: 1427005155.124713] [4.915000] zeroing
+[INFO] [WallTime: 1427005155.224388] [5.015000] zeroing
+[INFO] [WallTime: 1427005155.323050] [5.115000] zeroing
+[INFO] [WallTime: 1427005155.422883] [5.215000] zeroing
+[INFO] [WallTime: 1427005155.522266] [5.315000] arming
+[INFO] [WallTime: 1427005155.621046] [5.415000] arming
+[INFO] [WallTime: 1427005155.720538] [5.515000] arming
+[INFO] [WallTime: 1427005155.822233] [5.615000] arming
+[INFO] [WallTime: 1427005155.919896] [5.715000] arming
+[INFO] [WallTime: 1427005156.019690] [5.815000] setting offboard mode
+[INFO] [WallTime: 1427005156.122416] [5.915000] setting offboard mode
+[INFO] [WallTime: 1427005156.221984] [6.015000] setting offboard mode
+[INFO] [WallTime: 1427005156.322225] [6.115000] setting offboard mode
+[INFO] [WallTime: 1427005156.421774] [6.215000] setting offboard mode
+[INFO] [WallTime: 1427005156.519982] [6.315000] triggering offboard
+[INFO] [WallTime: 1427005156.621331] [6.415000] triggering offboard
+[INFO] [WallTime: 1427005156.721863] [6.515000] triggering offboard
+[INFO] [WallTime: 1427005156.820073] [6.615000] triggering offboard
+[INFO] [WallTime: 1427005156.918636] [6.715000] triggering offboard
+[INFO] [WallTime: 1427005158.039483] [7.815000] next segment
+[INFO] [WallTime: 1427005161.944558] [11.720000] next segment
+[INFO] [WallTime: 1427005167.759698] [17.515000] next segment
+[INFO] [WallTime: 1427005173.678889] [23.420000] next segment
+[INFO] [WallTime: 1427005180.393164] [30.115000] next segment
+[INFO] [WallTime: 1427005180.393454] [30.115000] no more positions
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

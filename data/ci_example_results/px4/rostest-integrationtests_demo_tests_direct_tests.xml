@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite errors="0" failures="0" name="unittest.suite.TestSuite" tests="2" time="69.262">
+  <testcase classname="rostest.runner.RosTest" name="testdirect_manual_input_test" time="28.6518"></testcase>
+  <testcase classname="rostest.runner.RosTest" name="testdirect_offboard_posctl_test" time="40.6100"></testcase>
+  <system-out><![CDATA[[ROSTEST]setup[/sitl/catkin_ws/src/Firmware/integrationtests/demo_tests/direct_tests.launch] run_id[482f59c2-d05b-11e4-9e84-0242ac110093] starting
+?[1mstarted roslaunch server http://f5d17d38b17f:56533/?[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /iris/MPC_XY_FF: 0.0
+ * /iris/MPC_XY_P: 1.0
+ * /iris/MPC_XY_VEL_D: 0.01
+ * /iris/MPC_XY_VEL_I: 0.0
+ * /iris/MPC_XY_VEL_MAX: 2.0
+ * /iris/MPC_XY_VEL_P: 0.01
+ * /iris/MPC_Z_P: 2.0
+ * /iris/MPC_Z_VEL_P: 0.3
+ * /iris/mixer: i
+ * /iris/vehicle_model: iris
+ * /robot_description: <?xml version="1....
+ * /rosdistro: indigo
+ * /rosversion: 1.11.10
+ * /tf_prefix: 
+ * /use_sim_time: True
+
+NODES
+  /
+    gazebo (gazebo_ros/gzserver)
+    spawn_iris (gazebo_ros/spawn_model)
+  /iris/
+    attitude_estimator (px4/attitude_estimator)
+    commander (px4/commander)
+    joy_node (joy/joy_node)
+    manual_input (px4/manual_input)
+    mavlink (px4/mavlink)
+    mc_att_control (px4/mc_att_control)
+    mc_mixer (px4/mc_mixer)
+    mc_pos_control (px4/mc_pos_control)
+    position_estimator (px4/position_estimator)
+
+[ROSTEST]setup[/sitl/catkin_ws/src/Firmware/integrationtests/demo_tests/direct_tests.launch] run_id[482f59c2-d05b-11e4-9e84-0242ac110093] done
+[ROSTEST]Running test [direct_manual_input_test]
+?[1mROS_MASTER_URI=http://f5d17d38b17f:33498/?[0m
+?[1msetting /run_id to 482f59c2-d05b-11e4-9e84-0242ac110093?[0m
+?[1mprocess[rosout-1]: started with pid [2489]?[0m
+started core service [/rosout]
+?[1mprocess[gazebo-2]: started with pid [2513]?[0m
+?[1mprocess[spawn_iris-3]: started with pid [2519]?[0m
+?[1mprocess[iris/joy_node-4]: started with pid [2522]?[0m
+?[1mprocess[iris/manual_input-5]: started with pid [2577]?[0m
+?[1mprocess[iris/commander-6]: started with pid [2641]?[0m
+?[1mprocess[iris/mc_mixer-7]: started with pid [2678]?[0m
+?[1mprocess[iris/attitude_estimator-8]: started with pid [2719]?[0m
+?[1mprocess[iris/position_estimator-9]: started with pid [2750]?[0m
+?[1mprocess[iris/mc_att_control-10]: started with pid [2779]?[0m
+?[1mprocess[iris/mc_pos_control-11]: started with pid [2919]?[0m
+?[1mprocess[iris/mavlink-12]: started with pid [3071]?[0m
+[ROSTEST]running test direct_manual_input_test
+?[1mprocess[direct_manual_input_test-13]: started with pid [3110]?[0m
+?[1m[spawn_iris-3] process has finished cleanly
+log file: /root/.ros/log/482f59c2-d05b-11e4-9e84-0242ac110093/spawn_iris-3*.log?[0m
+?[1m[direct_manual_input_test-13] process has finished cleanly
+log file: /root/.ros/log/482f59c2-d05b-11e4-9e84-0242ac110093/direct_manual_input_test-13*.log?[0m
+[ROSTEST]test [direct_manual_input_test] finished
+[ROSTEST]test [direct_manual_input_test] results are in [/sitl/catkin_ws/build/test_results/px4/rosunit-direct_manual_input_test.xml]
+[ROSTEST]test [direct_manual_input_test] results summary: 0 errors, 0 failures, 1 tests
+[ROSTEST][ROSTEST] test [direct_manual_input_test] done
+[ROSTEST]tearDown[/sitl/catkin_ws/src/Firmware/integrationtests/demo_tests/direct_tests.launch]
+shutting down processing monitor...
+[iris/mavlink-12] killing on exit
+[iris/mc_pos_control-11] killing on exit
+[iris/position_estimator-9] killing on exit
+[iris/mc_att_control-10] killing on exit
+[iris/attitude_estimator-8] killing on exit
+[iris/mc_mixer-7] killing on exit
+[iris/commander-6] killing on exit
+[iris/manual_input-5] killing on exit
+[iris/joy_node-4] killing on exit
+[gazebo-2] killing on exit
+[rosout-1] killing on exit
+... shutting down processing monitor complete
+[ROSTEST]rostest teardown /sitl/catkin_ws/src/Firmware/integrationtests/demo_tests/direct_tests.launch complete
+[ROSTEST]setup[/sitl/catkin_ws/src/Firmware/integrationtests/demo_tests/direct_tests.launch] run_id[59420f3e-d05b-11e4-9e84-0242ac110093] starting
+?[1mstarted roslaunch server http://f5d17d38b17f:36247/?[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /iris/MPC_XY_FF: 0.0
+ * /iris/MPC_XY_P: 1.0
+ * /iris/MPC_XY_VEL_D: 0.01
+ * /iris/MPC_XY_VEL_I: 0.0
+ * /iris/MPC_XY_VEL_MAX: 2.0
+ * /iris/MPC_XY_VEL_P: 0.01
+ * /iris/MPC_Z_P: 2.0
+ * /iris/MPC_Z_VEL_P: 0.3
+ * /iris/mixer: i
+ * /iris/vehicle_model: iris
+ * /robot_description: <?xml version="1....
+ * /rosdistro: indigo
+ * /rosversion: 1.11.10
+ * /tf_prefix: 
+ * /use_sim_time: True
+
+NODES
+  /
+    gazebo (gazebo_ros/gzserver)
+    spawn_iris (gazebo_ros/spawn_model)
+  /iris/
+    attitude_estimator (px4/attitude_estimator)
+    commander (px4/commander)
+    joy_node (joy/joy_node)
+    manual_input (px4/manual_input)
+    mavlink (px4/mavlink)
+    mc_att_control (px4/mc_att_control)
+    mc_mixer (px4/mc_mixer)
+    mc_pos_control (px4/mc_pos_control)
+    position_estimator (px4/position_estimator)
+
+[ROSTEST]setup[/sitl/catkin_ws/src/Firmware/integrationtests/demo_tests/direct_tests.launch] run_id[59420f3e-d05b-11e4-9e84-0242ac110093] done
+[ROSTEST]Running test [direct_offboard_posctl_test]
+?[1mROS_MASTER_URI=http://f5d17d38b17f:54488/?[0m
+?[1msetting /run_id to 59420f3e-d05b-11e4-9e84-0242ac110093?[0m
+?[1mprocess[rosout-14]: started with pid [3741]?[0m
+started core service [/rosout]
+?[1mprocess[gazebo-15]: started with pid [3765]?[0m
+?[1mprocess[spawn_iris-16]: started with pid [3771]?[0m
+?[1mprocess[iris/joy_node-17]: started with pid [3775]?[0m
+?[1mprocess[iris/manual_input-18]: started with pid [3890]?[0m
+?[1mprocess[iris/commander-19]: started with pid [4035]?[0m
+?[1m[spawn_iris-16] process has finished cleanly
+log file: /root/.ros/log/59420f3e-d05b-11e4-9e84-0242ac110093/spawn_iris-16*.log?[0m
+?[1mprocess[iris/mc_mixer-20]: started with pid [4068]?[0m
+?[1mprocess[iris/attitude_estimator-21]: started with pid [4103]?[0m
+?[1mprocess[iris/position_estimator-22]: started with pid [4129]?[0m
+?[1mprocess[iris/mc_att_control-23]: started with pid [4153]?[0m
+?[1mprocess[iris/mc_pos_control-24]: started with pid [4287]?[0m
+?[1mprocess[iris/mavlink-25]: started with pid [4434]?[0m
+[ROSTEST]running test direct_offboard_posctl_test
+?[1mprocess[direct_offboard_posctl_test-26]: started with pid [4468]?[0m
+?[1m[direct_offboard_posctl_test-26] process has finished cleanly
+log file: /root/.ros/log/59420f3e-d05b-11e4-9e84-0242ac110093/direct_offboard_posctl_test-26*.log?[0m
+[ROSTEST]test [direct_offboard_posctl_test] finished
+[ROSTEST]test [direct_offboard_posctl_test] results are in [/sitl/catkin_ws/build/test_results/px4/rosunit-direct_offboard_posctl_test.xml]
+[ROSTEST]test [direct_offboard_posctl_test] results summary: 0 errors, 0 failures, 1 tests
+[ROSTEST][ROSTEST] test [direct_offboard_posctl_test] done
+[ROSTEST]tearDown[/sitl/catkin_ws/src/Firmware/integrationtests/demo_tests/direct_tests.launch]
+shutting down processing monitor...
+[iris/mavlink-25] killing on exit
+[iris/mc_pos_control-24] killing on exit
+[iris/mc_att_control-23] killing on exit
+[iris/attitude_estimator-21] killing on exit
+[iris/mc_mixer-20] killing on exit
+[iris/position_estimator-22] killing on exit
+[iris/commander-19] killing on exit
+[iris/manual_input-18] killing on exit
+[iris/joy_node-17] killing on exit
+[gazebo-15] killing on exit
+[rosout-14] killing on exit
+... shutting down processing monitor complete
+[ROSTEST]rostest teardown /sitl/catkin_ws/src/Firmware/integrationtests/demo_tests/direct_tests.launch complete
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

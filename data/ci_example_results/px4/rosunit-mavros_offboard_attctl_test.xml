@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite errors="0" failures="0" name="unittest.suite.TestSuite" tests="1" time="4.837">
+  <testcase classname="__main__.MavrosOffboardAttctlTest" name="test_attctl" time="4.8367"></testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[WARN] [WallTime: 1427005202.883386] [10.155000] Trying to write to bag but it's already closed
+]]></system-err>
+</testsuite>

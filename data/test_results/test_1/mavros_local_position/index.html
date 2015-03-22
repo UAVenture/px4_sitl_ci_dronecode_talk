@@ -1,0 +1,113 @@
+<!doctype>
+<head>
+  <link rel="stylesheet" href="rickshaw.min.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+	<script src="rickshaw.min.js"></script>
+
+<style>
+  .rickshaw-chart {
+      font: 10px sans-serif;
+      float: left;
+      margin-top: 70px;
+            }
+  .rickshaw-y-axis {
+      font: 10px sans-serif;
+      float: left;
+      margin-top: 70px;
+  }
+  .rickshaw-legend {
+      float: left;
+      margin-left: 15px;
+      margin-top: 70px;
+  }
+
+  .rickshaw-slider {
+      float:left;
+      margin-top: : 100px;
+  }
+</style>
+</head>
+<body>
+        <div class="rickshaw-y-axis" id="bearcart_y_axis_id_80dee7a69ce445d58fbfc33485afabe3"></div>
+        <div class="rickshaw-chart" id="bearcart_97c0bcf6de4e4f7fa74e02a3598a2967"></div>
+        <div class="rickshaw-legend" id="bearcart_legend_id_f0b65ab70ea64bb5814744830f9a6bce"></div>
+        <div class="rickshaw-slider" id="bearcart_slider_id_bfefa90ca0c34436bb0fefd41889fcc5"></div>
+
+<script>
+
+  d3.json('data.json', function(error, json) {
+
+    var render_plot = (function(){
+
+        var palette = new Rickshaw.Color.Palette( {scheme: 'spectrum14'} );
+
+        var graph = new Rickshaw.Graph( {
+                element: d3.select("#bearcart_97c0bcf6de4e4f7fa74e02a3598a2967").node(),
+                min: 'auto',
+                width: 750,
+                height: 400,
+                renderer: 'line',
+                interpolation: 'linear',
+                padding: {top: 0.05, left: 0.02, right: 0.02, bottom: 0.05},
+                series: [
+                         {name: 'mavros_setpoint_local_position__pose_position_x',
+                          color: palette.color(),
+                          data: json[0].data},
+                          
+                         {name: 'mavros_setpoint_local_position__pose_position_y',
+                          color: palette.color(),
+                          data: json[1].data},
+                          
+                         {name: 'mavros_setpoint_local_position__pose_position_z',
+                          color: palette.color(),
+                          data: json[2].data}
+                          ]
+                })
+
+        var x_axis = new Rickshaw.Graph.Axis.Time( { graph: graph } );
+
+        
+
+        var y_axis = new Rickshaw.Graph.Axis.Y( {
+        graph: graph,
+        orientation: 'left',
+        height: 400,
+        tickFormat: Rickshaw.Fixtures.Number.formatKMBT,
+        element: d3.select("#bearcart_y_axis_id_80dee7a69ce445d58fbfc33485afabe3").node()
+} );
+
+        var hoverDetail = new Rickshaw.Graph.HoverDetail( {
+    graph: graph,
+    
+} );
+
+        var legend = new Rickshaw.Graph.Legend({
+    graph: graph,
+    element: d3.select("#bearcart_legend_id_f0b65ab70ea64bb5814744830f9a6bce").node()
+
+});
+
+var shelving = new Rickshaw.Graph.Behavior.Series.Toggle({
+    graph: graph,
+    legend: legend
+});
+
+        var slider = new Rickshaw.Graph.RangeSlider({
+    graph: graph,
+    element: d3.select("#bearcart_slider_id_bfefa90ca0c34436bb0fefd41889fcc5").node()
+});
+
+        graph.render();
+
+    })();
+
+  });
+
+
+</script>
+
+</body>

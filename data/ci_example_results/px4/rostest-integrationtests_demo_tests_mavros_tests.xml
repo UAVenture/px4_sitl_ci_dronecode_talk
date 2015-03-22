@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite errors="0" failures="0" name="unittest.suite.TestSuite" tests="2" time="51.795">
+  <testcase classname="rostest.runner.RosTest" name="testmavros_offboard_attctl_test" time="13.5818"></testcase>
+  <testcase classname="rostest.runner.RosTest" name="testmavros_offboard_posctl_test" time="38.2127"></testcase>
+  <system-out><![CDATA[[ROSTEST]setup[/sitl/catkin_ws/src/Firmware/integrationtests/demo_tests/mavros_tests.launch] run_id[72a78f08-d05b-11e4-9e84-0242ac110093] starting
+?[1mstarted roslaunch server http://f5d17d38b17f:42932/?[0m
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /iris/mavros/
+
+PARAMETERS
+ * /iris/MPC_XY_FF: 0.0
+ * /iris/MPC_XY_P: 1.0
+ * /iris/MPC_XY_VEL_D: 0.01
+ * /iris/MPC_XY_VEL_I: 0.0
+ * /iris/MPC_XY_VEL_MAX: 2.0
+ * /iris/MPC_XY_VEL_P: 0.01
+ * /iris/MPC_Z_P: 2.0
+ * /iris/MPC_Z_VEL_P: 0.3
+ * /iris/mavros/conn_heartbeat: 5.0
+ * /iris/mavros/conn_system_time: 1.0
+ * /iris/mavros/conn_timeout: 10.0
+ * /iris/mavros/conn_timesync: 0.1
+ * /iris/mavros/fcu_url: udp://localhost:1...
+ * /iris/mavros/gcs_url: 
+ * /iris/mavros/gps/frame_id: gps
+ * /iris/mavros/imu/angular_velocity_stdev: 0.000349065850399
+ * /iris/mavros/imu/frame_id: fcu
+ * /iris/mavros/imu/linear_acceleration_stdev: 0.0003
+ * /iris/mavros/imu/magnetic_stdev: 0.0
+ * /iris/mavros/imu/orientation_stdev: 1.0
+ * /iris/mavros/mission/pull_after_gcs: True
+ * /iris/mavros/plugin_blacklist: ['3dr_radio', 'im...
+ * /iris/mavros/setpoint/attitude/listen_twist: False
+ * /iris/mavros/startup_px4_usb_quirk: True
+ * /iris/mavros/sys/min_voltage: 10.0
+ * /iris/mavros/target_component_id: 50
+ * /iris/mavros/target_system_id: 1
+ * /iris/mixer: i
+ * /iris/vehicle_model: iris
+ * /robot_description: <?xml version="1....
+ * /rosdistro: indigo
+ * /rosversion: 1.11.10
+ * /tf_prefix: 
+ * /use_sim_time: True
+
+NODES
+  /
+    gazebo (gazebo_ros/gzserver)
+    spawn_iris (gazebo_ros/spawn_model)
+  /iris/
+    attitude_estimator (px4/attitude_estimator)
+    commander (px4/commander)
+    joy_node (joy/joy_node)
+    manual_input (px4/manual_input)
+    mavlink (px4/mavlink)
+    mavros (mavros/mavros_node)
+    mc_att_control (px4/mc_att_control)
+    mc_mixer (px4/mc_mixer)
+    mc_pos_control (px4/mc_pos_control)
+    position_estimator (px4/position_estimator)
+
+[ROSTEST]setup[/sitl/catkin_ws/src/Firmware/integrationtests/demo_tests/mavros_tests.launch] run_id[72a78f08-d05b-11e4-9e84-0242ac110093] done
+[ROSTEST]Running test [mavros_offboard_attctl_test]
+?[1mROS_MASTER_URI=http://f5d17d38b17f:44735/?[0m
+?[1msetting /run_id to 72a78f08-d05b-11e4-9e84-0242ac110093?[0m
+?[1mprocess[rosout-1]: started with pid [5030]?[0m
+started core service [/rosout]
+?[1mprocess[gazebo-2]: started with pid [5055]?[0m
+?[1mprocess[spawn_iris-3]: started with pid [5061]?[0m
+?[1mprocess[iris/joy_node-4]: started with pid [5065]?[0m
+?[1mprocess[iris/manual_input-5]: started with pid [5209]?[0m
+?[1mprocess[iris/commander-6]: started with pid [5319]?[0m
+?[1m[spawn_iris-3] process has finished cleanly
+log file: /root/.ros/log/72a78f08-d05b-11e4-9e84-0242ac110093/spawn_iris-3*.log?[0m
+?[1mprocess[iris/mc_mixer-7]: started with pid [5358]?[0m
+?[1mprocess[iris/attitude_estimator-8]: started with pid [5393]?[0m
+?[1mprocess[iris/position_estimator-9]: started with pid [5419]?[0m
+?[1mprocess[iris/mc_att_control-10]: started with pid [5443]?[0m
+?[1mprocess[iris/mc_pos_control-11]: started with pid [5577]?[0m
+?[1mprocess[iris/mavlink-12]: started with pid [5724]?[0m
+?[1mprocess[iris/mavros-13]: started with pid [5752]?[0m
+[ROSTEST]running test mavros_offboard_attctl_test
+?[1mprocess[mavros_offboard_attctl_test-14]: started with pid [5908]?[0m
+?[1m[mavros_offboard_attctl_test-14] process has finished cleanly
+log file: /root/.ros/log/72a78f08-d05b-11e4-9e84-0242ac110093/mavros_offboard_attctl_test-14*.log?[0m
+[ROSTEST]test [mavros_offboard_attctl_test] finished
+[ROSTEST]test [mavros_offboard_attctl_test] results are in [/sitl/catkin_ws/build/test_results/px4/rosunit-mavros_offboard_attctl_test.xml]
+[ROSTEST]test [mavros_offboard_attctl_test] results summary: 0 errors, 0 failures, 1 tests
+[ROSTEST][ROSTEST] test [mavros_offboard_attctl_test] done
+[ROSTEST]tearDown[/sitl/catkin_ws/src/Firmware/integrationtests/demo_tests/mavros_tests.launch]
+shutting down processing monitor...
+[iris/mavros-13] killing on exit
+[iris/mc_pos_control-11] killing on exit
+[iris/mc_att_control-10] killing on exit
+[iris/mavlink-12] killing on exit
+[iris/position_estimator-9] killing on exit
+[iris/attitude_estimator-8] killing on exit
+[iris/mc_mixer-7] killing on exit
+[iris/commander-6] killing on exit
+[iris/manual_input-5] killing on exit
+[iris/joy_node-4] killing on exit
+[gazebo-2] killing on exit
+[rosout-1] killing on exit
+... shutting down processing monitor complete
+[ROSTEST]rostest teardown /sitl/catkin_ws/src/Firmware/integrationtests/demo_tests/mavros_tests.launch complete
+[ROSTEST]setup[/sitl/catkin_ws/src/Firmware/integrationtests/demo_tests/mavros_tests.launch] run_id[7abec3f0-d05b-11e4-9e84-0242ac110093] starting
+?[1mstarted roslaunch server http://f5d17d38b17f:58478/?[0m
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /iris/mavros/
+
+PARAMETERS
+ * /iris/MPC_XY_FF: 0.0
+ * /iris/MPC_XY_P: 1.0
+ * /iris/MPC_XY_VEL_D: 0.01
+ * /iris/MPC_XY_VEL_I: 0.0
+ * /iris/MPC_XY_VEL_MAX: 2.0
+ * /iris/MPC_XY_VEL_P: 0.01
+ * /iris/MPC_Z_P: 2.0
+ * /iris/MPC_Z_VEL_P: 0.3
+ * /iris/mavros/conn_heartbeat: 5.0
+ * /iris/mavros/conn_system_time: 1.0
+ * /iris/mavros/conn_timeout: 10.0
+ * /iris/mavros/conn_timesync: 0.1
+ * /iris/mavros/fcu_url: udp://localhost:1...
+ * /iris/mavros/gcs_url: 
+ * /iris/mavros/gps/frame_id: gps
+ * /iris/mavros/imu/angular_velocity_stdev: 0.000349065850399
+ * /iris/mavros/imu/frame_id: fcu
+ * /iris/mavros/imu/linear_acceleration_stdev: 0.0003
+ * /iris/mavros/imu/magnetic_stdev: 0.0
+ * /iris/mavros/imu/orientation_stdev: 1.0
+ * /iris/mavros/mission/pull_after_gcs: True
+ * /iris/mavros/plugin_blacklist: ['3dr_radio', 'im...
+ * /iris/mavros/setpoint/attitude/listen_twist: False
+ * /iris/mavros/startup_px4_usb_quirk: True
+ * /iris/mavros/sys/min_voltage: 10.0
+ * /iris/mavros/target_component_id: 50
+ * /iris/mavros/target_system_id: 1
+ * /iris/mixer: i
+ * /iris/vehicle_model: iris
+ * /robot_description: <?xml version="1....
+ * /rosdistro: indigo
+ * /rosversion: 1.11.10
+ * /tf_prefix: 
+ * /use_sim_time: True
+
+NODES
+  /
+    gazebo (gazebo_ros/gzserver)
+    spawn_iris (gazebo_ros/spawn_model)
+  /iris/
+    attitude_estimator (px4/attitude_estimator)
+    commander (px4/commander)
+    joy_node (joy/joy_node)
+    manual_input (px4/manual_input)
+    mavlink (px4/mavlink)
+    mavros (mavros/mavros_node)
+    mc_att_control (px4/mc_att_control)
+    mc_mixer (px4/mc_mixer)
+    mc_pos_control (px4/mc_pos_control)
+    position_estimator (px4/position_estimator)
+
+[ROSTEST]setup[/sitl/catkin_ws/src/Firmware/integrationtests/demo_tests/mavros_tests.launch] run_id[7abec3f0-d05b-11e4-9e84-0242ac110093] done
+[ROSTEST]Running test [mavros_offboard_posctl_test]
+?[1mROS_MASTER_URI=http://f5d17d38b17f:58589/?[0m
+?[1msetting /run_id to 7abec3f0-d05b-11e4-9e84-0242ac110093?[0m
+?[1mprocess[rosout-15]: started with pid [6285]?[0m
+started core service [/rosout]
+?[1mprocess[gazebo-16]: started with pid [6310]?[0m
+?[1mprocess[spawn_iris-17]: started with pid [6316]?[0m
+?[1mprocess[iris/joy_node-18]: started with pid [6320]?[0m
+?[1mprocess[iris/manual_input-19]: started with pid [6409]?[0m
+?[1mprocess[iris/commander-20]: started with pid [6580]?[0m
+?[1m[spawn_iris-17] process has finished cleanly
+log file: /root/.ros/log/7abec3f0-d05b-11e4-9e84-0242ac110093/spawn_iris-17*.log?[0m
+?[1mprocess[iris/mc_mixer-21]: started with pid [6613]?[0m
+?[1mprocess[iris/attitude_estimator-22]: started with pid [6648]?[0m
+?[1mprocess[iris/position_estimator-23]: started with pid [6674]?[0m
+?[1mprocess[iris/mc_att_control-24]: started with pid [6698]?[0m
+?[1mprocess[iris/mc_pos_control-25]: started with pid [6832]?[0m
+?[1mprocess[iris/mavlink-26]: started with pid [6979]?[0m
+?[1mprocess[iris/mavros-27]: started with pid [7013]?[0m
+[ROSTEST]running test mavros_offboard_posctl_test
+?[1mprocess[mavros_offboard_posctl_test-28]: started with pid [7125]?[0m
+?[1m[mavros_offboard_posctl_test-28] process has finished cleanly
+log file: /root/.ros/log/7abec3f0-d05b-11e4-9e84-0242ac110093/mavros_offboard_posctl_test-28*.log?[0m
+[ROSTEST]test [mavros_offboard_posctl_test] finished
+[ROSTEST]test [mavros_offboard_posctl_test] results are in [/sitl/catkin_ws/build/test_results/px4/rosunit-mavros_offboard_posctl_test.xml]
+[ROSTEST]test [mavros_offboard_posctl_test] results summary: 0 errors, 0 failures, 1 tests
+[ROSTEST][ROSTEST] test [mavros_offboard_posctl_test] done
+[ROSTEST]tearDown[/sitl/catkin_ws/src/Firmware/integrationtests/demo_tests/mavros_tests.launch]
+shutting down processing monitor...
+[iris/mavros-27] killing on exit
+[iris/mavlink-26] killing on exit
+[iris/mc_att_control-24] killing on exit
+[iris/mc_pos_control-25] killing on exit
+[iris/attitude_estimator-22] killing on exit
+[iris/position_estimator-23] killing on exit
+[iris/mc_mixer-21] killing on exit
+[iris/joy_node-18] killing on exit
+[iris/manual_input-19] killing on exit
+[iris/commander-20] killing on exit
+[gazebo-16] killing on exit
+[rosout-15] killing on exit
+... shutting down processing monitor complete
+[ROSTEST]rostest teardown /sitl/catkin_ws/src/Firmware/integrationtests/demo_tests/mavros_tests.launch complete
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
