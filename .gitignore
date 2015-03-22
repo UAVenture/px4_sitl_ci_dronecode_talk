@@ -3,4 +3,4 @@ __pycache__/
 *.so
 *.iml
 *.sublime-workspace
-
+*.sublime-project
