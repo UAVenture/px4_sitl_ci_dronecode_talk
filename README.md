@@ -10,7 +10,9 @@ To make the example self contained you'll find some duplicated code from the PX4
 
 **PDF: [DroneCode Unconference Talk](DroneCode_Unconference_Talk.pdf)**
 
-**Running the vertical takeoff example**
+**Videos referenced: [playlist](https://www.youtube.com/playlist?list=PL_FM1r6SqjrGZyQfgrAw1B_6Jyx5nWyMG)**
+
+**Running the vertical takeoff example:**
 
 Execution the test with GUI:
 
